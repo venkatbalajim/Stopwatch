@@ -1,0 +1,90 @@
+body {
+    background-color: #f4f4f4;
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+}
+
+#time-watch {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#title-application {
+    font-size: 40px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+#timer {
+    font-size: 2em;
+}
+
+#buttons {
+    margin-top: 50px;
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    padding: 10px;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    opacity: .7;
+}
+
+button:disabled {
+    background-color: #bdc3c7;
+    cursor: not-allowed;
+}
+
+ul {
+    margin-top: 20px;
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+.clickable {
+    cursor: pointer;  
+}
+
+.clickable:hover {
+    text-decoration: none; 
+}
+
+.notification {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 999;
+}
+
+#frame {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border: 3px solid #3498db;
+}

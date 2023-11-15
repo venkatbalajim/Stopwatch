@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch Application</title>
+    <link rel="icon" type="x-icon" href="Stopwatch_Icon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="theme.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;500;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <p id="title-application">StopWatch Application</p>
+    <div class="theme-container">
+        <p class="theme-title">Change theme here</p>
+        <div class="theme-switch">
+            <label class="switch">
+                <input type="checkbox" id="themeToggle">
+                <span class="slider round"></span>
+            </label>
+        </div>
+    </div>
+    <div id="time-watch">
+        <div id="frame">
+            <div id="timer">00:00:00</div>
+        </div>
+        <div id="buttons">
+            <button id="start">Start</button>
+            <button id="stop">Stop</button>
+            <button id="reset">Reset</button>
+            <button id="lap">Lap</button>
+        </div>
+        <ul id="lapList" class="clickable"></ul>
+    </div>
+    <script src="script.js"></script>
+    <script src="theme.js"></script>
+</body>
+</html>
